@@ -1,17 +1,20 @@
-import { styled } from "@mui/system";
+import { makeStyles } from "tss-react/mui";
+//App styles
 
-export const MainComponent = styled('div')({
-    display: 'flex',
-    height: '100%',
-});
-
-export const Toolbar = styled('div')({
-    height: '70px',
-});
-
-export const Content = styled('div')({
-    flexGrow: '1',
-    padding: '2em',
+export const useStyles = makeStyles()((theme) => {
+    return {
+        root: {
+            display: 'flex',
+            height: '100%'
+        },
+        toolbar: {
+            height: '70px',
+        },
+        content: {
+            flexGrow: '1',
+            padding: '5em 3em',
+        },
+    }
 });
 
 //export default MainComponent;
