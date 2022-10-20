@@ -4,7 +4,6 @@ const tmdbApiKey = process.env.REACT_APP_TMDB_KEY ;
 const page = 1 
 // https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
 
-
 export const tmdbApi = createApi({
     reducerPath: 'tmdbApi',
     baseQuery: fetchBaseQuery({ baseUrl: 'https://api.themoviedb.org/3' }),
